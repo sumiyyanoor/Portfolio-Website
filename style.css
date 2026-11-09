@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff7fb;
+    color: #222222;
+}
+
+header {
+    background-color: #add8e6;
+    padding: 35px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.page-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    min-height: 70vh;
+}
+
+nav {
+    background-color: #ffc0cb;
+    padding: 25px 15px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #add8e6;
+    color: #222222;
+}
+
+main {
+    padding: 30px;
+}
+
+.wide-box {
+    background-color: white;
+    border-left: 8px solid #ffc0cb;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+
+.wide-box h2 {
+    margin-top: 0;
+    color: #e89aaa;
+}
+
+.box-row {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.small-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border-top: 6px solid #add8e6;
+    min-width: 220px;
+    flex: 1;
+}
+
+.small-box h3 {
+    margin-top: 0;
+    color: #e89aaa;
+}
+
+.small-box a {
+    color: #4a90a4;
+    font-weight: bold;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background-color: #ffc0cb;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #add8e6;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #add8e6;
+    text-align: center;
+    padding: 12px;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .page-layout {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .box-row {
+        flex-direction: column;
+    }
+
+    .small-box {
+        min-width: auto;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+}
